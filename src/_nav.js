@@ -9,34 +9,34 @@ export default {
         text: 'NEW'
       }
     },
-    {
-      title: true,
-      name: 'Theme',
-      class: '',
-      wrapper: {
-        element: '',
-        attributes: {}
-      }
-    },
-    {
-      name: 'Colors',
-      url: '/theme/colors',
-      icon: 'icon-drop'
-    },
-    {
-      name: 'Typography',
-      url: '/theme/typography',
-      icon: 'icon-pencil'
-    },
-    {
-      title: true,
-      name: 'Components',
-      class: '',
-      wrapper: {
-        element: '',
-        attributes: {}
-      }
-    },
+    // {
+    //   title: true,
+    //   name: 'Theme',
+    //   class: '',
+    //   wrapper: {
+    //     element: '',
+    //     attributes: {}
+    //   }
+    // },
+    // {
+    //   name: 'Colors',
+    //   url: '/theme/colors',
+    //   icon: 'icon-drop'
+    // },
+    // {
+    //   name: 'Typography',
+    //   url: '/theme/typography',
+    //   icon: 'icon-pencil'
+    // },
+    // {
+    //   title: true,
+    //   name: 'Components',
+    //   class: '',
+    //   wrapper: {
+    //     element: '',
+    //     attributes: {}
+    //   }
+    // },
     {
       name: 'Base',
       url: '/base',
@@ -73,7 +73,6 @@ export default {
           icon: 'icon-puzzle'
         },
         {
-          name: 'List Groups',
           url: '/base/list-groups',
           icon: 'icon-puzzle'
         },
@@ -256,30 +255,30 @@ export default {
         }
       ]
     },
-    {
-      name: 'Disabled',
-      url: '/dashboard',
-      icon: 'icon-ban',
-      badge: {
-        variant: 'secondary',
-        text: 'NEW'
-      },
-      attributes: { disabled: true },
-    },
-    {
-      name: 'Download CoreUI',
-      url: 'http://coreui.io/vue/',
-      icon: 'icon-cloud-download',
-      class: 'mt-auto',
-      variant: 'success',
-      attributes: { target: '_blank', rel: 'noopener' }
-    },
-    {
-      name: 'Try CoreUI PRO',
-      url: 'http://coreui.io/pro/vue/',
-      icon: 'icon-layers',
-      variant: 'danger',
-      attributes: { target: '_blank', rel: 'noopener' }
-    },
+    // {
+    //   name: 'Disabled',
+    //   url: '/dashboard',
+    //   icon: 'icon-ban',
+    //   badge: {
+    //     variant: 'secondary',
+    //     text: 'NEW'
+    //   },
+    //   attributes: { disabled: true },
+    // },
+    // {
+    //   name: 'Download CoreUI',
+    //   url: 'http://coreui.io/vue/',
+    //   icon: 'icon-cloud-download',
+    //   class: 'mt-auto',
+    //   variant: 'success',
+    //   attributes: { target: '_blank', rel: 'noopener' }
+    // },
+    // {
+    //   name: 'Try CoreUI PRO',
+    //   url: 'http://coreui.io/pro/vue/',
+    //   icon: 'icon-layers',
+    //   variant: 'danger',
+    //   attributes: { target: '_blank', rel: 'noopener' }
+    // },
   ]
 }

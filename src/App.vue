@@ -21,6 +21,9 @@ export default {
   @import '~flag-icon-css/css/flag-icon.min.css';
   /* Import Bootstrap Vue Styles */
   @import '~bootstrap-vue/dist/bootstrap-vue.css';
+  /* Import avatar */
+  // @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+  // @import "../node_modules/@syncfusion/ej2-layouts/styles/material.css";
   // Import Main styles for this application
   @import 'assets/scss/style';
 </style>

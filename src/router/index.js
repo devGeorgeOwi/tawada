@@ -1,6 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import AudioPage from '@/views/AudioPage'
+import UserProfile from '@/views/UserProfile'
+import Avatar from '@/views/components/Avatar'
+import Books from '@/views/Books'
+
+
+
+
 // Containers
 const DefaultContainer = () => import('@/containers/DefaultContainer')
 
@@ -10,7 +18,7 @@ const Dashboard = () => import('@/views/Dashboard')
 const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
 
-const Charts = () => import('@/views/Charts')
+// const Charts = () => import('@/views/Charts')
 const Widgets = () => import('@/views/Widgets')
 
 // Views - Components
@@ -53,6 +61,7 @@ const Page404 = () => import('@/views/pages/Page404')
 const Page500 = () => import('@/views/pages/Page500')
 const Login = () => import('@/views/pages/Login')
 const Register = () => import('@/views/pages/Register')
+const CreateProfile = () => import('@/views/pages/CreateProfile')
 
 // Users
 const Users = () => import('@/views/users/Users')
@@ -67,10 +76,30 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/dashboard',
+      redirect: '/pages/login',
       name: 'Home',
       component: DefaultContainer,
       children: [
+        {
+          path: 'audiopage',
+          name: 'AudioPage',
+          component: AudioPage
+        },  
+        {
+          path: 'userprofile',
+          name: 'UserProfile',
+          component: UserProfile 
+        },
+        {
+          path: 'components/avatar',
+          name: 'Avatar',
+          component: Avatar
+        },
+        {
+          path: 'books',
+          name: 'Books',
+          component: Books
+        },
         {
           path: 'dashboard',
           name: 'Dashboard',
@@ -96,11 +125,11 @@ export default new Router({
             }
           ]
         },
-        {
-          path: 'charts',
-          name: 'Charts',
-          component: Charts
-        },
+        // {
+        //   path: 'charts',
+        //   name: 'Charts',
+        //   component: Charts
+        // },
         {
           path: 'widgets',
           name: 'Widgets',
@@ -321,7 +350,7 @@ export default new Router({
           component: Page500
         },
         {
-          path: 'login',
+          path: 'login',   
           name: 'Login',
           component: Login
         },
@@ -329,6 +358,11 @@ export default new Router({
           path: 'register',
           name: 'Register',
           component: Register
+        },
+        {
+          path: 'createprofile',
+          name: 'CreateProfile',
+          component: CreateProfile
         }
       ]
     }

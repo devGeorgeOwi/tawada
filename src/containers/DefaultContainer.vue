@@ -21,6 +21,8 @@
           <i class="icon-list"></i>
         </b-nav-item>
         <b-nav-item class="d-md-down-none">
+        {
+          path: 'theme',
           <i class="icon-location-pin"></i>
         </b-nav-item>
         <DefaultHeaderDropdownAccnt/>
@@ -32,6 +34,24 @@
       <AppSidebar fixed>
         <SidebarHeader/>
         <SidebarForm/>
+        <b-col sm="6" lg="3">
+        <!-- <b-card no-body class="bg-primary">
+          <b-card-body class="pb-0">
+            <b-dropdown class="float-right" variant="transparent p-0" right>
+              <template slot="button-content">
+                <i class="icon-settings"></i>
+              </template>
+              <b-dropdown-item>Action</b-dropdown-item>
+              <b-dropdown-item>Another action</b-dropdown-item>
+              <b-dropdown-item>Something else here...</b-dropdown-item>
+              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+            </b-dropdown>
+            <h4 class="mb-0">9.823</h4>
+            <p>Members online</p> -->
+          <!-- </b-card-body>
+          <card-line1-chart-example chartId="card-chart-01" class="chart-wrapper px-3" style="height:70px;" :height="70"/>
+        </b-card> -->
+      </b-col>
         <SidebarNav :navItems="nav"></SidebarNav>
         <SidebarFooter/>
         <SidebarMinimizer/>
@@ -50,12 +70,12 @@
     <TheFooter>
       <!--footer-->
       <div>
-        <a href="https://coreui.io">CoreUI</a>
-        <span class="ml-1">&copy; 2018 creativeLabs.</span>
+        <a href="#">Tawada</a>
+        <span class="ml-1">&copy; 2018.</span>
       </div>
       <div class="ml-auto">
         <span class="mr-1">Powered by</span>
-        <a href="https://coreui.io">CoreUI for Vue</a>
+        <a href="#">Hooli Consults</a>
       </div>
     </TheFooter>
   </div>
